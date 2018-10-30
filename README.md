@@ -10,16 +10,22 @@
 ## Phoenix Login
 Register for an account by submitting a form [on this page](https://www.adelaide.edu.au/phoenix/register/).
 
-After your account is activated, login and copy [this file] into your home folder. 
+After your account is activated, login clone this project and copy `phx/.bashrc` into your home folder.
+
+```sh
+$ git clone https://github.com/stanstarks/pytorch-on-phx
+$ cd pytorch-on-phx; cp phx/.bashrc ~
+$ source ~/.bashrc
+```
 
 ## Install pyenv
 Pyenv is an easy to use Python version management tool integrating [virtualenv](https://github.com/pyenv/pyenv-virtualenv) and Anaconda. To install it, simply use [pyenv installer](https://github.com/pyenv/pyenv-installer).
 
-Since there is limited space under home folder on phx. It is recommended to install pyenv under `\fast` partition. To so do, set `PYENV_ROOT` environment variable to be your fast folder:
+Since there is limited space under home folder on phx. It is recommended to install pyenv under `/fast` partition. To so do, set `PYENV_ROOT` environment variable to be your fast folder:
 
 ```sh
 $ echo 'export PYENV_ROOT=/fast/users/a17XXXXX/.pyenv' >> ~/.bashrc
-source ~/.bashrc
+$ source ~/.bashrc
 ```
 
 Now you can install pyenv from Git:
