@@ -58,7 +58,7 @@ pyenv global 3.6.6
 We will use PyTorch in this demo. Install it with conda:
 
 ```sh
-conda install pytorch torchvision -c pytorch
+pip install torch torchvision
 ```
 
 We will use [tensorboardX](https://github.com/lanpa/tensorboardX) for visualization:
